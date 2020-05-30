@@ -446,7 +446,7 @@ namespace Esoft_Project
         {
             if (textBoxCoordinate_longtitude.Text != "" && textBoxCoordinate_latitude.Text != "-")
             {
-                if (Convert.ToDouble(textBoxCoordinate_longtitude.Text) < -180 || Convert.ToDouble(textBoxCoordinate_latitude.Text) > 180)
+                if (Convert.ToDouble(textBoxCoordinate_longtitude.Text) < -180 || Convert.ToDouble(textBoxCoordinate_longtitude.Text) > 180)
                 {
                     textBoxCoordinate_longtitude.Text = "";
                 }
