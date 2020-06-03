@@ -155,5 +155,10 @@ namespace Esoft_Project
         {
 
         }
+
+        private void FormClient_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -56,25 +56,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgentsSet.cs">
-      <DependentUpon>Esoft_ProgectModel.tt</DependentUpon>
+      <DependentUpon>Esoft_Project_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientsSet.cs">
-      <DependentUpon>Esoft_ProgectModel.tt</DependentUpon>
+      <DependentUpon>Esoft_Project_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Esoft_ProgectModel.Context.cs">
+    <Compile Include="DealSet.cs">
+      <DependentUpon>Esoft_Project_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DemandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemandForm.Designer.cs">
+      <DependentUpon>DemandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemandSet.cs">
+      <DependentUpon>Esoft_Project_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Esoft_Project_Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Esoft_ProgectModel.Context.tt</DependentUpon>
+      <DependentUpon>Esoft_Project_Model.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Esoft_ProgectModel.cs">
+    <Compile Include="Esoft_Project_Model.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Esoft_ProgectModel.tt</DependentUpon>
+      <DependentUpon>Esoft_Project_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Esoft_ProgectModel.Designer.cs">
+    <Compile Include="Esoft_Project_Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Esoft_ProgectModel.edmx</DependentUpon>
+      <DependentUpon>Esoft_Project_Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="FormAgent.cs">
       <SubType>Form</SubType>
@@ -82,11 +94,29 @@
     <Compile Include="FormAgent.Designer.cs">
       <DependentUpon>FormAgent.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAutorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAutorization.Designer.cs">
+      <DependentUpon>FormAutorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeal.Designer.cs">
+      <DependentUpon>FormDeal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRealEstate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRealEstate.Designer.cs">
       <DependentUpon>FormRealEstate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupply.Designer.cs">
+      <DependentUpon>FormSupply.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -103,13 +133,31 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RealEstateSet.cs">
-      <DependentUpon>Esoft_ProgectModel.tt</DependentUpon>
+      <DependentUpon>Esoft_Project_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="SupplySet.cs">
+      <DependentUpon>Esoft_Project_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <DependentUpon>Esoft_Project_Model.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DemandForm.resx">
+      <DependentUpon>DemandForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAgent.resx">
       <DependentUpon>FormAgent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAutorization.resx">
+      <DependentUpon>FormAutorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeal.resx">
+      <DependentUpon>FormDeal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRealEstate.resx">
       <DependentUpon>FormRealEstate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupply.resx">
+      <DependentUpon>FormSupply.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -127,12 +175,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EntityDeploy Include="Esoft_ProgectModel.edmx">
+    <EntityDeploy Include="Esoft_Project_Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Esoft_ProgectModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Esoft_Project_Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Esoft_ProgectModel.edmx.diagram">
-      <DependentUpon>Esoft_ProgectModel.edmx</DependentUpon>
+    <None Include="Esoft_Project_Model.edmx.diagram">
+      <DependentUpon>Esoft_Project_Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -155,15 +203,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Esoft_ProgectModel.Context.tt">
+    <Content Include="Esoft_Project_Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Esoft_ProgectModel.edmx</DependentUpon>
-      <LastGenOutput>Esoft_ProgectModel.Context.cs</LastGenOutput>
+      <DependentUpon>Esoft_Project_Model.edmx</DependentUpon>
+      <LastGenOutput>Esoft_Project_Model.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Esoft_ProgectModel.tt">
+    <Content Include="Esoft_Project_Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Esoft_ProgectModel.edmx</DependentUpon>
-      <LastGenOutput>Esoft_ProgectModel.cs</LastGenOutput>
+      <DependentUpon>Esoft_Project_Model.edmx</DependentUpon>
+      <LastGenOutput>Esoft_Project_Model.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

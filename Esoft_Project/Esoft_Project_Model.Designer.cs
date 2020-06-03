@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\пидор\Desktop\гавно\Esoft_Project\Esoft_Project\Esoft_ProgectModel.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\пидор\Desktop\Esoft_Project\Esoft_Project\Esoft_Project_Model.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

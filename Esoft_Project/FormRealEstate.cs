@@ -173,7 +173,7 @@ namespace Esoft_Project
         {
             //создаём новый экземпляр класса Объект недвижимости
             RealEstateSet realEstate = new RealEstateSet();
-            //Делаем ссылку на объект, который хранится в textBox-ах (сначала общи поля)
+            //Делаем ссылку на объект, который хранится в textBox-ах (сначала общиe поля)
             realEstate.Address_City = textBoxAddress_City.Text;
             realEstate.Address_House = textBoxAddress_House.Text;
             realEstate.Address_Street = textBoxAddress_Street.Text;

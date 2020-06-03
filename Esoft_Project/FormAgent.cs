@@ -26,7 +26,7 @@ namespace Esoft_Project
                 ListViewItem item = new ListViewItem(new string[]
                 {
                     agentsSet.Id.ToString(), agentsSet.FirstName, agentsSet.MiddleName,
-                    agentsSet.LastName, agentsSet.DealShare.ToString()
+                    agentsSet.LastName, agentsSet.DealShare.ToString()+"%"
                 });
                 item.Tag = agentsSet;
                 listViewAgent.Items.Add(item);
